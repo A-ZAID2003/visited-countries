@@ -3,6 +3,8 @@ import React from 'react'
 const CountryList = ({countriesList, onVisitClick}) => (
   <div>
     <h1>Countries</h1>
+    <p>Visited</p>
+    <p>Visited</p>
     <ul>
       {countriesList.map(country => (
         <li key={country.id}>
