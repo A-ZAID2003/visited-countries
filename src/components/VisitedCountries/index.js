@@ -1,3 +1,5 @@
+//This is visitedCountries component
+
 import React from 'react'
 
 const VisitedCountries = ({visitedCountries, onRemoveClick}) => (

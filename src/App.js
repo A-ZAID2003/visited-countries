@@ -1,3 +1,4 @@
+//This is App.js component
 import React, {useState} from 'react'
 import CountryList from './components/CountryList'
 import VisitedCountries from './components/VisitedCountries'

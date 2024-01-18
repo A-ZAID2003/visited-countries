@@ -1,3 +1,4 @@
+//This is countryList component
 import React from 'react'
 
 const CountryList = ({countriesList, onVisitClick}) => (
