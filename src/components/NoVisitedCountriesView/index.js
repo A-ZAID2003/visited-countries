@@ -1,4 +1,3 @@
-//This is NovisitedCountriesView component
 import React from 'react'
 
 const NoVisitedCountriesView = () => (

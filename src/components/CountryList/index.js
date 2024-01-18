@@ -1,4 +1,3 @@
-//This is countryList component
 import React from 'react'
 
 const CountryList = ({countriesList, onVisitClick}) => (
@@ -11,7 +10,9 @@ const CountryList = ({countriesList, onVisitClick}) => (
         <li key={country.id}>
           <img src={country.imageUrl} alt="thumbnail" />
           <p>{country.name}</p>
-          {!country.isVisited && (
+          {country.isVisited ? (
+            <p>Visited</p>
+          ) : (
             <button onClick={() => onVisitClick(country.id)}>Visit</button>
           )}
         </li>

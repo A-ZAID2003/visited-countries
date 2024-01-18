@@ -1,4 +1,3 @@
-//This is App.js component
 import React, {useState} from 'react'
 import CountryList from './components/CountryList'
 import VisitedCountries from './components/VisitedCountries'
@@ -79,9 +78,15 @@ const initialCountriesList = [
   },
 ]
 
+const initialVisitedCountries = initialCountriesList.filter(
+  country => country.isVisited,
+)
+
 const App = () => {
   const [countriesList, setCountriesList] = useState(initialCountriesList)
-  const [visitedCountries, setVisitedCountries] = useState([])
+  const [visitedCountries, setVisitedCountries] = useState(
+    initialVisitedCountries,
+  )
 
   const handleVisitClick = id => {
     const updatedCountriesList = countriesList.map(country =>

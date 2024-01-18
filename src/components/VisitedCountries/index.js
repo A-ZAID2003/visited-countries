@@ -1,8 +1,10 @@
-//This is visitedCountries component
-
 import React from 'react'
 
-const VisitedCountries = ({visitedCountries, onRemoveClick}) => (
+const VisitedCountries = ({
+  visitedCountries,
+  onRemoveClick,
+  onVisitAgainClick,
+}) => (
   <div>
     <h1>Visited Countries</h1>
     <button>Remove</button>
@@ -15,6 +17,7 @@ const VisitedCountries = ({visitedCountries, onRemoveClick}) => (
         </li>
       ))}
     </ul>
+    {visitedCountries.length === 0 && <p>No Countries Visited Yet</p>}
   </div>
 )
 
